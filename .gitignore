@@ -6,3 +6,4 @@ log
 /Saved_Model/*.meta
 /Saved_Model/*.data*
 /logs
+/Logs

@@ -3,7 +3,7 @@
 # Best Scores
 - Humman - 645
 - openCV - 620
-- Neural Network - randomAction - 120
+- Neural Network - 128 - currently it just is always jumping
 
 ## goal
 
