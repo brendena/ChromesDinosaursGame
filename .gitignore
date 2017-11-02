@@ -5,3 +5,4 @@ log
 /Saved_Model/checkpoint
 /Saved_Model/*.meta
 /Saved_Model/*.data*
+/logs
