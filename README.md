@@ -14,6 +14,9 @@ The goal is to create an ai that can play the little chrome dinosaurs game.
 1. opencv to match image and get high score
 2. tensorflow to create a CNN neural network
 
+# notes
+I can't upload the data because a hour of data is around 700 mbytes.
+
 
 
 ## Just OpenCV Attempt

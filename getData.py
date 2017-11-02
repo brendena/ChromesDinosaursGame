@@ -1,19 +1,8 @@
-import numpy as np
-import pyscreenshot as ImageGrab
 import cv2
 import time
-from getkey import getkey
-import os
-import pytesseract
-import pyautogui
-import random
 import pickle
 from helperFunction import findImage, getScore, getImage, getRandomAction, resetGame
-try:
-    import Image
-except ImportError:
-    from PIL import Image
-
+import pyautogui
 resetImage = cv2.imread('endGameImage.jpg',0)
 
 
@@ -31,8 +20,8 @@ def main():
     #the open cv will spot the 
     #image at twice 
     # 
-    loopAmount = 50000
-    minimumScore = 80
+    loopAmount = 1000
+    minimumScore = 50
     trainingData = []
     for i in range(0,loopAmount):
         gameMemory = []
@@ -41,9 +30,10 @@ def main():
             #time.sleep(0.005)                                            
             screen = getImage()
             action = getRandomAction()
-            gameMemory.append([screen , action])
+            score = getScore(screen)
+            if(score < 30):
+                gameMemory.append([screen , action])
             if(findImage(resetImage, screen)["foundImage"] == True):
-                score = getScore(screen)
                 print("breaking")
                 break
         print(i)

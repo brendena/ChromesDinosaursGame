@@ -1,13 +1,6 @@
 import numpy as np
-import pyscreenshot as ImageGrab
 import cv2
 import time
-from getkey import getkey
-import os
-import pytesseract
-import pyautogui
-import random
-import pickle
 from helperFunction import findImage, getScore, getImage, getRandomAction, jump
 
 
